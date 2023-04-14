@@ -43,21 +43,6 @@ import Foundation
         watching = false
     }
 
-    #if DEBUG
-    /**
-     Displays view tracker debug options
-     
-     On calling ```NowYou.debug()``` a debug menu will pop up on the screen, which can then be used to draw overlays on top of views being tracked and selective enable tracking only for the views of interest.
-     Important information about the selected views like the current frame and viewability percentage will then start popping up in the console logs.
-     
-     - Important: This method is only available in DEBUG mode
-     - Note: All the views will still be tracked by the framework but the callback will be provided only for the selected views
-     */
-    @objc public static func debug() {
-        DebugHelper.shared.show()
-    }
-    #endif
-
     /**
      Boolean which stores the current tracking status
      

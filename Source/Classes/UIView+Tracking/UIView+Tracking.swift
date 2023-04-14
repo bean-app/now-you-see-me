@@ -48,18 +48,9 @@ extension UIView {
         // setup the tracker
         let tracker: ViewTracker
         if let scrollView: UIScrollView = self as? UIScrollView {
-            // special handling for scrollviews
-            #if DEBUG
-            tracker = DebugScrollTracker(scrollView)
-            #else
             tracker = ScrollTracker(scrollView)
-            #endif
-        } else {
-            #if DEBUG
-            tracker = DebugViewTracker(self)
-            #else
+    } else {
             tracker = ViewTracker(self)
-            #endif
         }
         tracker.setConditions(conditions)
         tracker.setListener(listener)

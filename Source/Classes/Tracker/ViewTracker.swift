@@ -66,8 +66,6 @@ public class ViewTracker: NSObject {
     /**
      Determines whether viewability callbacks should be sent to listeners
      
-     Used for debug mode, where ```DebugViewTracker``` overrides this
-     
      - Note: Default value is true
      */
     internal var shouldNotifyListeners: Bool {

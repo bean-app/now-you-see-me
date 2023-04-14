@@ -12,12 +12,8 @@ Pod::Spec.new do |s|
   s.author           = { 'naveen-c' => 'naveen.c@flipkart.com' }
   s.source           = { :git => 'https://github.com/Flipkart/now-you-see-me.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
   s.swift_version = '5'
   
   s.source_files = 'Source/Classes/**/*.{h,m,swift}'
-  s.resources = 'Source/**/*.{xcassets,xib,storyboard}'
-  
-  s.dependency 'FCChatHeads'
-  
 end
